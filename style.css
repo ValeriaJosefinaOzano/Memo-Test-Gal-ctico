@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #4b0082;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+#restart {
+  background-color: #ff6ec7;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart:hover {
+  background-color: #ff4bb2;
+}
+
+#moves {
+  font-size: 1rem;
+  color: #4b0082;
+}
+
+.cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+.carta {
+  width: 80px;
+  height: 80px;
+  background-color: #fdff88;
+  border: 2px solid #fcf377;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.cartas {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 1rem;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.atras {
+    background-color: #ffe91f;
+  border: 2px solid #d4c70e;
+    border-radius: 12px;
+    color: transparent;
+  
+}
+
+#win-message {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #008000;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  font-size: 0.9rem;
+  color: #555;
+}
